@@ -1,0 +1,138 @@
+[0.543s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'alma_camera']
+[0.544s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['alma_camera'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff9c029090>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9c181cc0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9c181cc0>>)
+[2.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.125s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.125s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.125s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.126s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/robotik_alma_ws'
+[2.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.130s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.137s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.330s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.332s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.334s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.337s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.339s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.341s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.349s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.351s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.355s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.357s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.359s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.363s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.364s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.365s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.365s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.367s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.367s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.368s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.369s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.370s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.371s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.372s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.374s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extensions ['ignore', 'ignore_ament_install']
+[2.375s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'ignore'
+[2.377s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'ignore_ament_install'
+[2.378s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extensions ['colcon_pkg']
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'colcon_pkg'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extensions ['colcon_meta']
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'colcon_meta'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extensions ['ros']
+[2.383s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'ros'
+[2.415s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alma_camera' with type 'ros.ament_python' and name 'alma_camera'
+[2.419s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extensions ['ignore', 'ignore_ament_install']
+[2.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'ignore'
+[2.423s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'ignore_ament_install'
+[2.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extensions ['colcon_pkg']
+[2.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'colcon_pkg'
+[2.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extensions ['colcon_meta']
+[2.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'colcon_meta'
+[2.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extensions ['ros']
+[2.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'ros'
+[2.439s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alma_erste_abgabe' with type 'ros.ament_python' and name 'alma_erste_abgabe'
+[2.442s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.445s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.446s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.670s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'alma_erste_abgabe' in 'src/alma_erste_abgabe'
+[2.763s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.763s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.789s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/pi/robotik_alma_ws/install
+[2.804s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 309 installed packages in /opt/ros/iron
+[2.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.728s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_args' from command line to 'None'
+[3.729s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_target' from command line to 'None'
+[3.729s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.729s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[3.729s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_clean_first' from command line to 'False'
+[3.730s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_force_configure' from command line to 'False'
+[3.730s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'ament_cmake_args' from command line to 'None'
+[3.730s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[3.730s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.731s] DEBUG:colcon.colcon_core.verb:Building package 'alma_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/robotik_alma_ws/build/alma_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/robotik_alma_ws/install/alma_camera', 'merge_install': False, 'path': '/home/pi/robotik_alma_ws/src/alma_camera', 'symlink_install': False, 'test_result_base': None}
+[3.732s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.742s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.751s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/robotik_alma_ws/src/alma_camera' with build type 'ament_python'
+[3.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('alma_camera', 'ament_prefix_path')
+[3.785s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/ament_prefix_path.ps1'
+[3.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/ament_prefix_path.dsv'
+[3.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/ament_prefix_path.sh'
+[3.809s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.809s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.928s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/robotik_alma_ws/src/alma_camera'
+[6.929s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.930s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/robotik_alma_ws/src/alma_camera': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data
+[11.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/robotik_alma_ws/src/alma_camera' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data
+[11.697s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera' for CMake module files
+[11.700s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera' for CMake config files
+[11.704s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/lib'
+[11.705s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/bin'
+[11.705s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/lib/pkgconfig/alma_camera.pc'
+[11.706s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages'
+[11.707s] Level 1:colcon.colcon_core.shell:create_environment_hook('alma_camera', 'pythonpath')
+[11.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/pythonpath.ps1'
+[11.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/pythonpath.dsv'
+[11.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/pythonpath.sh'
+[11.716s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/bin'
+[11.717s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alma_camera)
+[11.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.ps1'
+[11.722s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.dsv'
+[11.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.sh'
+[11.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.bash'
+[11.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.zsh'
+[11.737s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/robotik_alma_ws/install/alma_camera/share/colcon-core/packages/alma_camera)
+[11.739s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.740s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.740s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.741s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.774s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.774s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.775s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.842s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.843s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/robotik_alma_ws/install/local_setup.ps1'
+[11.848s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/robotik_alma_ws/install/_local_setup_util_ps1.py'
+[11.856s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/robotik_alma_ws/install/setup.ps1'
+[11.864s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/robotik_alma_ws/install/local_setup.sh'
+[11.868s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/robotik_alma_ws/install/_local_setup_util_sh.py'
+[11.871s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/robotik_alma_ws/install/setup.sh'
+[11.878s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/robotik_alma_ws/install/local_setup.bash'
+[11.881s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/robotik_alma_ws/install/setup.bash'
+[11.887s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/robotik_alma_ws/install/local_setup.zsh'
+[11.889s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/robotik_alma_ws/install/setup.zsh'

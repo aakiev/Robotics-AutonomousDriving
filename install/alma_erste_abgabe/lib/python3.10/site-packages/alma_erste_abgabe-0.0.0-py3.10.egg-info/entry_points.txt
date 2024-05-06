@@ -1,0 +1,4 @@
+[console_scripts]
+listener = alma_erste_abgabe.subscriber_member_function:main
+talker = alma_erste_abgabe.publisher_member_function:main
+

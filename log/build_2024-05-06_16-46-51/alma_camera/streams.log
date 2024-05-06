@@ -1,0 +1,28 @@
+[6.146s] Invoking command in '/home/pi/robotik_alma_ws/src/alma_camera': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data
+[7.617s] running egg_info
+[7.620s] writing ../../build/alma_camera/alma_camera.egg-info/PKG-INFO
+[7.621s] writing dependency_links to ../../build/alma_camera/alma_camera.egg-info/dependency_links.txt
+[7.623s] writing entry points to ../../build/alma_camera/alma_camera.egg-info/entry_points.txt
+[7.624s] writing requirements to ../../build/alma_camera/alma_camera.egg-info/requires.txt
+[7.624s] writing top-level names to ../../build/alma_camera/alma_camera.egg-info/top_level.txt
+[7.634s] reading manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'
+[7.637s] adding license file 'LICENSE'
+[7.639s] writing manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'
+[7.640s] running build
+[7.641s] running build_py
+[7.641s] copying alma_camera/camera_line_detector.py -> /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera
+[7.646s] running install
+[7.651s] running install_lib
+[7.659s] copying /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera/camera_line_detector.py -> /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera
+[7.663s] byte-compiling /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera/camera_line_detector.py to camera_line_detector.cpython-310.pyc
+[7.668s] running install_data
+[7.669s] running install_egg_info
+[7.675s] removing '/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[7.677s] Copying ../../build/alma_camera/alma_camera.egg-info to /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info
+[7.683s] running install_scripts
+[7.773s] Installing camera_colorHSV_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[7.775s] Installing camera_image_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[7.778s] Installing camera_line_detector script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[7.781s] Installing camera_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[7.786s] writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_camera/install.log'
+[7.928s] Invoked command in '/home/pi/robotik_alma_ws/src/alma_camera' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data

@@ -1,0 +1,6 @@
+[console_scripts]
+camera_colorHSV_sub = alma_camera.colorHSV_subscriber:main
+camera_image_sub = alma_camera.image_subscriber:main
+camera_line_detector = alma_camera.camera_line_detector:main
+camera_pub = alma_camera.camera_publisher:main
+

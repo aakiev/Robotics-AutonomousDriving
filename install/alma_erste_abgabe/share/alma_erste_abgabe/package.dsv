@@ -1,0 +1,6 @@
+source;share/alma_erste_abgabe/hook/pythonpath.ps1
+source;share/alma_erste_abgabe/hook/pythonpath.dsv
+source;share/alma_erste_abgabe/hook/pythonpath.sh
+source;share/alma_erste_abgabe/hook/ament_prefix_path.ps1
+source;share/alma_erste_abgabe/hook/ament_prefix_path.dsv
+source;share/alma_erste_abgabe/hook/ament_prefix_path.sh
