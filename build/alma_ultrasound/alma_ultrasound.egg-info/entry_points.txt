@@ -1,0 +1,3 @@
+[console_scripts]
+ultrasound_pub = alma_ultrasound.ultrasound_pub:main
+

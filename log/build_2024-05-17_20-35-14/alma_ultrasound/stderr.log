@@ -1,0 +1,5 @@
+  File "/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages/alma_ultrasound/ultrasound_pub.py", line 8
+    def__init__(self):
+                     ^
+SyntaxError: invalid syntax
+

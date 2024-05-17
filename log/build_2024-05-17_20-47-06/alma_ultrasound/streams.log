@@ -1,0 +1,25 @@
+[3.194s] Invoking command in '/home/pi/robotik_alma_ws/src/alma_ultrasound': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_ultrasound/prefix_override:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_ultrasound build --build-base /home/pi/robotik_alma_ws/build/alma_ultrasound/build install --record /home/pi/robotik_alma_ws/build/alma_ultrasound/install.log --single-version-externally-managed install_data
+[4.454s] running egg_info
+[4.457s] writing ../../build/alma_ultrasound/alma_ultrasound.egg-info/PKG-INFO
+[4.459s] writing dependency_links to ../../build/alma_ultrasound/alma_ultrasound.egg-info/dependency_links.txt
+[4.460s] writing entry points to ../../build/alma_ultrasound/alma_ultrasound.egg-info/entry_points.txt
+[4.461s] writing requirements to ../../build/alma_ultrasound/alma_ultrasound.egg-info/requires.txt
+[4.462s] writing top-level names to ../../build/alma_ultrasound/alma_ultrasound.egg-info/top_level.txt
+[4.472s] reading manifest file '../../build/alma_ultrasound/alma_ultrasound.egg-info/SOURCES.txt'
+[4.474s] adding license file 'LICENSE'
+[4.481s] writing manifest file '../../build/alma_ultrasound/alma_ultrasound.egg-info/SOURCES.txt'
+[4.482s] running build
+[4.482s] running build_py
+[4.483s] copying alma_ultrasound/ultrasound_pub.py -> /home/pi/robotik_alma_ws/build/alma_ultrasound/build/lib/alma_ultrasound
+[4.484s] running install
+[4.485s] running install_lib
+[4.489s] copying /home/pi/robotik_alma_ws/build/alma_ultrasound/build/lib/alma_ultrasound/ultrasound_pub.py -> /home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages/alma_ultrasound
+[4.492s] byte-compiling /home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages/alma_ultrasound/ultrasound_pub.py to ultrasound_pub.cpython-310.pyc
+[4.496s] running install_data
+[4.497s] running install_egg_info
+[4.505s] removing '/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages/alma_ultrasound-0.0.0-py3.10.egg-info' (and everything under it)
+[4.506s] Copying ../../build/alma_ultrasound/alma_ultrasound.egg-info to /home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages/alma_ultrasound-0.0.0-py3.10.egg-info
+[4.512s] running install_scripts
+[4.609s] Installing ultrasound_pub script to /home/pi/robotik_alma_ws/install/alma_ultrasound/lib/alma_ultrasound
+[4.611s] writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_ultrasound/install.log'
+[4.751s] Invoked command in '/home/pi/robotik_alma_ws/src/alma_ultrasound' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_ultrasound/prefix_override:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_ultrasound build --build-base /home/pi/robotik_alma_ws/build/alma_ultrasound/build install --record /home/pi/robotik_alma_ws/build/alma_ultrasound/install.log --single-version-externally-managed install_data

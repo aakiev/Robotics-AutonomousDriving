@@ -1,0 +1,24 @@
+[4.431s] Invoking command in '/home/pi/robotik_alma_ws/build/alma_camera': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/pi/robotik_alma_ws/build/alma_camera/build --no-deps symlink_data --force
+[5.893s] running develop
+[5.899s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.900s]   warnings.warn(
+[6.905s] running egg_info
+[6.906s] writing alma_camera.egg-info/PKG-INFO
+[6.907s] writing dependency_links to alma_camera.egg-info/dependency_links.txt
+[6.908s] writing entry points to alma_camera.egg-info/entry_points.txt
+[6.909s] writing requirements to alma_camera.egg-info/requires.txt
+[6.910s] writing top-level names to alma_camera.egg-info/top_level.txt
+[6.919s] reading manifest file 'alma_camera.egg-info/SOURCES.txt'
+[6.923s] writing manifest file 'alma_camera.egg-info/SOURCES.txt'
+[6.929s] running build_ext
+[6.931s] Creating /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma-camera.egg-link (link to .)
+[6.935s] Installing camera_colorHSV_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[6.936s] Installing camera_image_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[6.937s] Installing camera_line_detector script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[6.938s] Installing camera_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[6.940s] 
+[6.940s] Installed /home/pi/robotik_alma_ws/build/alma_camera
+[6.941s] running symlink_data
+[6.942s] symbolically linking /home/pi/robotik_alma_ws/build/alma_camera/resource/alma_camera -> /home/pi/robotik_alma_ws/install/alma_camera/share/ament_index/resource_index/packages
+[6.943s] symbolically linking /home/pi/robotik_alma_ws/build/alma_camera/package.xml -> /home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera
+[7.178s] Invoked command in '/home/pi/robotik_alma_ws/build/alma_camera' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/pi/robotik_alma_ws/build/alma_camera/build --no-deps symlink_data --force

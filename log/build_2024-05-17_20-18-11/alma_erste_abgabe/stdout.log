@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing alma_erste_abgabe.egg-info/PKG-INFO
+writing dependency_links to alma_erste_abgabe.egg-info/dependency_links.txt
+writing entry points to alma_erste_abgabe.egg-info/entry_points.txt
+writing requirements to alma_erste_abgabe.egg-info/requires.txt
+writing top-level names to alma_erste_abgabe.egg-info/top_level.txt
+reading manifest file 'alma_erste_abgabe.egg-info/SOURCES.txt'
+writing manifest file 'alma_erste_abgabe.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma-erste-abgabe.egg-link (link to .)
+Installing listener script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe
+Installing talker script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe
+
+Installed /home/pi/robotik_alma_ws/build/alma_erste_abgabe
+running symlink_data
+symbolically linking /home/pi/robotik_alma_ws/build/alma_erste_abgabe/resource/alma_erste_abgabe -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/ament_index/resource_index/packages
+symbolically linking /home/pi/robotik_alma_ws/build/alma_erste_abgabe/package.xml -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe

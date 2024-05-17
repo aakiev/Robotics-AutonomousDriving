@@ -1,0 +1,22 @@
+[4.417s] Invoking command in '/home/pi/robotik_alma_ws/build/alma_erste_abgabe': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build --no-deps symlink_data --force
+[5.883s] running develop
+[5.884s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.885s]   warnings.warn(
+[6.889s] running egg_info
+[6.890s] writing alma_erste_abgabe.egg-info/PKG-INFO
+[6.892s] writing dependency_links to alma_erste_abgabe.egg-info/dependency_links.txt
+[6.893s] writing entry points to alma_erste_abgabe.egg-info/entry_points.txt
+[6.894s] writing requirements to alma_erste_abgabe.egg-info/requires.txt
+[6.895s] writing top-level names to alma_erste_abgabe.egg-info/top_level.txt
+[6.906s] reading manifest file 'alma_erste_abgabe.egg-info/SOURCES.txt'
+[6.913s] writing manifest file 'alma_erste_abgabe.egg-info/SOURCES.txt'
+[6.924s] running build_ext
+[6.925s] Creating /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma-erste-abgabe.egg-link (link to .)
+[6.933s] Installing listener script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe
+[6.935s] Installing talker script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe
+[6.938s] 
+[6.939s] Installed /home/pi/robotik_alma_ws/build/alma_erste_abgabe
+[6.940s] running symlink_data
+[6.941s] symbolically linking /home/pi/robotik_alma_ws/build/alma_erste_abgabe/resource/alma_erste_abgabe -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/ament_index/resource_index/packages
+[6.942s] symbolically linking /home/pi/robotik_alma_ws/build/alma_erste_abgabe/package.xml -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe
+[7.212s] Invoked command in '/home/pi/robotik_alma_ws/build/alma_erste_abgabe' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build --no-deps symlink_data --force

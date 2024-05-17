@@ -1,4 +1,3 @@
-LICENSE
 package.xml
 setup.cfg
 setup.py
@@ -14,7 +13,11 @@ alma_camera/camera_line_detector.py
 alma_camera/camera_publisher.py
 alma_camera/colorHSV_subscriber.py
 alma_camera/image_subscriber.py
+alma_camera.egg-info/PKG-INFO
+alma_camera.egg-info/SOURCES.txt
+alma_camera.egg-info/dependency_links.txt
+alma_camera.egg-info/entry_points.txt
+alma_camera.egg-info/requires.txt
+alma_camera.egg-info/top_level.txt
+alma_camera.egg-info/zip-safe
 resource/alma_camera
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
