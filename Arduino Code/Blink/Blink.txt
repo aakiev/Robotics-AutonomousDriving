@@ -1,3 +1,22 @@
+
+
+//- **Mean (`mu`)**:
+//  - 5 cm: \(\mu \approx 5.04\)
+//  - 20 cm: \(\mu \approx 20.30\)
+//  - 40 cm: \(\mu \approx 38.25\)
+//  - 65 cm: \(\mu \approx 61.79\)
+//  - 100 cm: \(\mu \approx 95.49\)
+//  - 150 cm: \(\mu \approx 142.54\)
+
+//- **Variance (`sigma^2`)**:
+//  - 5 cm: \(\sigma^2 \approx 0.0028\)
+//  - 20 cm: \(\sigma^2 \approx 0.0201\)
+//  - 40 cm: \(\sigma^2 \approx 0.1103\)
+//  - 65 cm: \(\sigma^2 \approx 0.1178\)
+//  - 100 cm: \(\sigma^2 \approx 0.1803\)
+//  - 150 cm: \(\sigma^2 \approx 0.7711\)
+
+
 #include <Servo.h>
 Servo myservo;
 int pos = 0;    // Servomotor auf 0 Grad
@@ -11,6 +30,28 @@ int echoPin = 8;
 const int numMeasurements = 5; // Number of measurements to smooth
 float measurements[numMeasurements];
 int currentMeasurement = 0;
+
+// Lookup table for mu and sigma2 values
+struct GaussianParams {
+    float mu;
+    float sigma2;
+};
+
+GaussianParams getGaussianParams(float distance) {
+    if (distance <= 5) {
+        return {5.04, 0.0028}; // Values for 5 cm
+    } else if (distance <= 20) {
+        return {20.30, 0.0201}; // Values for 20 cm
+    } else if (distance <= 40) {
+        return {38.25, 0.1103}; // Values for 40 cm
+    } else if (distance <= 65) {
+        return {61.79, 0.1178}; // Values for 65 cm
+    } else if (distance <= 100) {
+        return {95.49, 0.1803}; // Values for 100 cm
+    } else {
+        return {142.54, 0.7711}; // Values for 150 cm
+    }
+}
 
 // Gaussian function
 float gaussian(float mu, float sigma2, float x) {
@@ -57,10 +98,11 @@ void loop() {
     measurements[currentMeasurement] = distancecm;
     currentMeasurement = (currentMeasurement + 1) % numMeasurements;
 
+    // Get Gaussian parameters based on the current distance
+    GaussianParams params = getGaussianParams(distancecm);
+
     // Apply Gaussian filter
-    float mu = distancecm; // Assuming the mean is the current measurement
-    float sigma2 = 4.0;    // Adjust sigma2 as needed
-    float smoothedDistance = applyGaussianFilter(measurements, numMeasurements, mu, sigma2);
+    float smoothedDistance = applyGaussianFilter(measurements, numMeasurements, params.mu, params.sigma2);
 
     // Control the servo based on the smoothed distance
     if (smoothedDistance <= 5) {
