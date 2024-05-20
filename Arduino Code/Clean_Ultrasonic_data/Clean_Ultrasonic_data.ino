@@ -1,8 +1,3 @@
-I apologize for the issues you're encountering. The problem seems to be with how the Gaussian filter is being applied. Let's simplify the approach by using a simple moving average to smooth the data instead of applying the Gaussian function. This might provide more stable results.
-
-Here’s the updated code using a simple moving average:
-
-```cpp
 #include <Servo.h>
 Servo myservo;
 int pos = 0;    // Servomotor auf 0 Grad
@@ -78,18 +73,3 @@ void loop() {
     Serial.println(smoothedDistance);
     delay(100);
 }
-```
-
-### Explanation:
-1. **Moving Average Calculation**:
-   - The `calculateMovingAverage` function computes the average of the last `numMeasurements` distance readings.
-   - This will help smooth out any noise in the sensor data.
-
-2. **Main Loop**:
-   - Measurements are taken as before and stored in the `measurements` array.
-   - The moving average is calculated and used to control the servo.
-
-3. **Initialization**:
-   - The `measurements` array is initialized with zeros to ensure it starts with valid data.
-
-This simplified approach should provide more stable and accurate distance measurements. Try this code and see if it improves the accuracy of your sensor readings.
