@@ -1,22 +1,8 @@
+I apologize for the issues you're encountering. The problem seems to be with how the Gaussian filter is being applied. Let's simplify the approach by using a simple moving average to smooth the data instead of applying the Gaussian function. This might provide more stable results.
 
+Here’s the updated code using a simple moving average:
 
-//- **Mean (`mu`)**:
-//  - 5 cm: \(\mu \approx 5.04\)
-//  - 20 cm: \(\mu \approx 20.30\)
-//  - 40 cm: \(\mu \approx 38.25\)
-//  - 65 cm: \(\mu \approx 61.79\)
-//  - 100 cm: \(\mu \approx 95.49\)
-//  - 150 cm: \(\mu \approx 142.54\)
-
-//- **Variance (`sigma^2`)**:
-//  - 5 cm: \(\sigma^2 \approx 0.0028\)
-//  - 20 cm: \(\sigma^2 \approx 0.0201\)
-//  - 40 cm: \(\sigma^2 \approx 0.1103\)
-//  - 65 cm: \(\sigma^2 \approx 0.1178\)
-//  - 100 cm: \(\sigma^2 \approx 0.1803\)
-//  - 150 cm: \(\sigma^2 \approx 0.7711\)
-
-
+```cpp
 #include <Servo.h>
 Servo myservo;
 int pos = 0;    // Servomotor auf 0 Grad
@@ -26,46 +12,18 @@ float distancecm;
 int trigPin = 7;
 int echoPin = 8;
 
-// Gaussian filter parameters
+// Moving average filter parameters
 const int numMeasurements = 5; // Number of measurements to smooth
 float measurements[numMeasurements];
 int currentMeasurement = 0;
 
-// Lookup table for mu and sigma2 values
-struct GaussianParams {
-    float mu;
-    float sigma2;
-};
-
-GaussianParams getGaussianParams(float distance) {
-    if (distance <= 5) {
-        return {5.04, 0.0028}; // Values for 5 cm
-    } else if (distance <= 20) {
-        return {20.30, 0.0201}; // Values for 20 cm
-    } else if (distance <= 40) {
-        return {38.25, 0.1103}; // Values for 40 cm
-    } else if (distance <= 65) {
-        return {61.79, 0.1178}; // Values for 65 cm
-    } else if (distance <= 100) {
-        return {95.49, 0.1803}; // Values for 100 cm
-    } else {
-        return {142.54, 0.7711}; // Values for 150 cm
-    }
-}
-
-// Gaussian function
-float gaussian(float mu, float sigma2, float x) {
-    float prob = 1.0 / sqrt(2.0 * PI * sigma2) * exp(-0.5 * pow((x - mu), 2.0) / sigma2);
-    return prob;
-}
-
-// Apply Gaussian filter to measurements
-float applyGaussianFilter(float* data, int size, float mu, float sigma2) {
-    float smoothedValue = 0;
+// Function to calculate the moving average
+float calculateMovingAverage(float* data, int size) {
+    float sum = 0;
     for (int i = 0; i < size; i++) {
-        smoothedValue += gaussian(mu, sigma2, data[i]);
+        sum += data[i];
     }
-    return smoothedValue / size;
+    return sum / size;
 }
 
 void setup() {
@@ -76,6 +34,11 @@ void setup() {
     myservo.attach(3);        // 3 Pins am Servo (Wo ich den anspreche)
     myservo.write(0);         // positioniere dich auf 0 grad
     delay(1000);
+
+    // Initialize the measurements array with zeros
+    for (int i = 0; i < numMeasurements; i++) {
+        measurements[i] = 0;
+    }
 }
 
 void loop() {
@@ -98,11 +61,8 @@ void loop() {
     measurements[currentMeasurement] = distancecm;
     currentMeasurement = (currentMeasurement + 1) % numMeasurements;
 
-    // Get Gaussian parameters based on the current distance
-    GaussianParams params = getGaussianParams(distancecm);
-
-    // Apply Gaussian filter
-    float smoothedDistance = applyGaussianFilter(measurements, numMeasurements, params.mu, params.sigma2);
+    // Calculate the moving average
+    float smoothedDistance = calculateMovingAverage(measurements, numMeasurements);
 
     // Control the servo based on the smoothed distance
     if (smoothedDistance <= 5) {
@@ -118,3 +78,18 @@ void loop() {
     Serial.println(smoothedDistance);
     delay(100);
 }
+```
+
+### Explanation:
+1. **Moving Average Calculation**:
+   - The `calculateMovingAverage` function computes the average of the last `numMeasurements` distance readings.
+   - This will help smooth out any noise in the sensor data.
+
+2. **Main Loop**:
+   - Measurements are taken as before and stored in the `measurements` array.
+   - The moving average is calculated and used to control the servo.
+
+3. **Initialization**:
+   - The `measurements` array is initialized with zeros to ensure it starts with valid data.
+
+This simplified approach should provide more stable and accurate distance measurements. Try this code and see if it improves the accuracy of your sensor readings.
