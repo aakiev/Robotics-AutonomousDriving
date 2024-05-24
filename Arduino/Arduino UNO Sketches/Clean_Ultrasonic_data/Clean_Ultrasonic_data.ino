@@ -1,4 +1,4 @@
-#include <Servo.h>
+#include <Servo_UNO.h>
 Servo myservo;
 int pos = 0;    // Servomotor auf 0 Grad
 
