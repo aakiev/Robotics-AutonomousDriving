@@ -1,0 +1,179 @@
+[0.000000] (-) TimerEvent: {}
+[0.001406] (alma_camera) JobQueued: {'identifier': 'alma_camera', 'dependencies': OrderedDict()}
+[0.002557] (alma_erste_abgabe) JobQueued: {'identifier': 'alma_erste_abgabe', 'dependencies': OrderedDict()}
+[0.003243] (alma_ultrasound) JobQueued: {'identifier': 'alma_ultrasound', 'dependencies': OrderedDict()}
+[0.003805] (alma_camera) JobStarted: {'identifier': 'alma_camera'}
+[0.064760] (alma_erste_abgabe) JobStarted: {'identifier': 'alma_erste_abgabe'}
+[0.095165] (alma_ultrasound) JobStarted: {'identifier': 'alma_ultrasound'}
+[0.099117] (-) TimerEvent: {}
+[0.199850] (-) TimerEvent: {}
+[0.300586] (-) TimerEvent: {}
+[0.401398] (-) TimerEvent: {}
+[0.502249] (-) TimerEvent: {}
+[0.602973] (-) TimerEvent: {}
+[0.703699] (-) TimerEvent: {}
+[0.804400] (-) TimerEvent: {}
+[0.905126] (-) TimerEvent: {}
+[1.005885] (-) TimerEvent: {}
+[1.106706] (-) TimerEvent: {}
+[1.207436] (-) TimerEvent: {}
+[1.308247] (-) TimerEvent: {}
+[1.409116] (-) TimerEvent: {}
+[1.511565] (-) TimerEvent: {}
+[1.614786] (-) TimerEvent: {}
+[1.715657] (-) TimerEvent: {}
+[1.817008] (-) TimerEvent: {}
+[1.917933] (-) TimerEvent: {}
+[2.018714] (-) TimerEvent: {}
+[2.119490] (-) TimerEvent: {}
+[2.220187] (-) TimerEvent: {}
+[2.320901] (-) TimerEvent: {}
+[2.421680] (-) TimerEvent: {}
+[2.522456] (-) TimerEvent: {}
+[2.623228] (-) TimerEvent: {}
+[2.723961] (-) TimerEvent: {}
+[2.825019] (-) TimerEvent: {}
+[2.928658] (-) TimerEvent: {}
+[3.030127] (-) TimerEvent: {}
+[3.130933] (-) TimerEvent: {}
+[3.231789] (-) TimerEvent: {}
+[3.332542] (-) TimerEvent: {}
+[3.433269] (-) TimerEvent: {}
+[3.534073] (-) TimerEvent: {}
+[3.641846] (-) TimerEvent: {}
+[3.742647] (-) TimerEvent: {}
+[3.843360] (-) TimerEvent: {}
+[3.944069] (-) TimerEvent: {}
+[4.044861] (-) TimerEvent: {}
+[4.145687] (-) TimerEvent: {}
+[4.246462] (-) TimerEvent: {}
+[4.347317] (-) TimerEvent: {}
+[4.448320] (-) TimerEvent: {}
+[4.549356] (-) TimerEvent: {}
+[4.650278] (-) TimerEvent: {}
+[4.751140] (-) TimerEvent: {}
+[4.851958] (-) TimerEvent: {}
+[4.952924] (-) TimerEvent: {}
+[5.053876] (-) TimerEvent: {}
+[5.154841] (-) TimerEvent: {}
+[5.255696] (-) TimerEvent: {}
+[5.356659] (-) TimerEvent: {}
+[5.457583] (-) TimerEvent: {}
+[5.559518] (-) TimerEvent: {}
+[5.661522] (-) TimerEvent: {}
+[5.764032] (-) TimerEvent: {}
+[5.866368] (-) TimerEvent: {}
+[5.968688] (-) TimerEvent: {}
+[6.071107] (-) TimerEvent: {}
+[6.173867] (-) TimerEvent: {}
+[6.277086] (-) TimerEvent: {}
+[6.378703] (-) TimerEvent: {}
+[6.485284] (-) TimerEvent: {}
+[6.590334] (-) TimerEvent: {}
+[6.693257] (-) TimerEvent: {}
+[6.795665] (-) TimerEvent: {}
+[6.893198] (alma_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/alma_camera', 'build', '--build-base', '/home/pi/robotik_alma_ws/build/alma_camera/build', 'install', '--record', '/home/pi/robotik_alma_ws/build/alma_camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/robotik_alma_ws/src/alma_camera', 'env': {'OPENBLAS_CORETYPE': 'ARMV8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.188.147 55670 22', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'BROWSER': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'TERM_PROGRAM_VERSION': '1.84.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-edfbe3f9-01d8-48ed-b191-3c1ad438a248.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/robotik_alma_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/bin/remote-cli:/home/pi/.local/bin:/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_DE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ab38ceaeef.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/robotik_alma_ws/install/alma_ultrasound:/home/pi/robotik_alma_ws/install/alma_erste_abgabe:/home/pi/robotik_alma_ws/install/alma_camera:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/robotik_alma_ws/build/alma_camera', 'SSH_CONNECTION': '192.168.188.147 55670 192.168.188.130 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1'}, 'shell': False}
+[6.904914] (-) TimerEvent: {}
+[6.933672] (alma_ultrasound) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/alma_ultrasound', 'build', '--build-base', '/home/pi/robotik_alma_ws/build/alma_ultrasound/build', 'install', '--record', '/home/pi/robotik_alma_ws/build/alma_ultrasound/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/robotik_alma_ws/src/alma_ultrasound', 'env': {'OPENBLAS_CORETYPE': 'ARMV8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.188.147 55670 22', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'BROWSER': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'TERM_PROGRAM_VERSION': '1.84.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-edfbe3f9-01d8-48ed-b191-3c1ad438a248.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/robotik_alma_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/bin/remote-cli:/home/pi/.local/bin:/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_DE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ab38ceaeef.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/robotik_alma_ws/install/alma_ultrasound:/home/pi/robotik_alma_ws/install/alma_erste_abgabe:/home/pi/robotik_alma_ws/install/alma_camera:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/robotik_alma_ws/build/alma_ultrasound', 'SSH_CONNECTION': '192.168.188.147 55670 192.168.188.130 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/robotik_alma_ws/build/alma_ultrasound/prefix_override:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1'}, 'shell': False}
+[6.949166] (alma_erste_abgabe) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/alma_erste_abgabe', 'build', '--build-base', '/home/pi/robotik_alma_ws/build/alma_erste_abgabe/build', 'install', '--record', '/home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/robotik_alma_ws/src/alma_erste_abgabe', 'env': {'OPENBLAS_CORETYPE': 'ARMV8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.188.147 55670 22', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'BROWSER': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'TERM_PROGRAM_VERSION': '1.84.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-edfbe3f9-01d8-48ed-b191-3c1ad438a248.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/robotik_alma_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/pi/.vscode-server/bin/d037ac076cee195194f93ce6fe2bdfe2969cc82d/bin/remote-cli:/home/pi/.local/bin:/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_DE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ab38ceaeef.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/robotik_alma_ws/install/alma_ultrasound:/home/pi/robotik_alma_ws/install/alma_erste_abgabe:/home/pi/robotik_alma_ws/install/alma_camera:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/robotik_alma_ws/build/alma_erste_abgabe', 'SSH_CONNECTION': '192.168.188.147 55670 192.168.188.130 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1'}, 'shell': False}
+[7.005739] (-) TimerEvent: {}
+[7.117992] (-) TimerEvent: {}
+[7.219595] (-) TimerEvent: {}
+[7.320428] (-) TimerEvent: {}
+[7.421629] (-) TimerEvent: {}
+[7.523224] (-) TimerEvent: {}
+[7.624549] (-) TimerEvent: {}
+[7.725682] (-) TimerEvent: {}
+[7.827025] (-) TimerEvent: {}
+[7.928257] (-) TimerEvent: {}
+[8.029432] (-) TimerEvent: {}
+[8.130914] (-) TimerEvent: {}
+[8.232083] (-) TimerEvent: {}
+[8.333244] (-) TimerEvent: {}
+[8.434548] (-) TimerEvent: {}
+[8.535910] (-) TimerEvent: {}
+[8.637159] (-) TimerEvent: {}
+[8.680550] (alma_erste_abgabe) StdoutLine: {'line': b'running egg_info\n'}
+[8.685053] (alma_erste_abgabe) StdoutLine: {'line': b'writing ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/PKG-INFO\n'}
+[8.691910] (alma_erste_abgabe) StdoutLine: {'line': b'writing dependency_links to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/dependency_links.txt\n'}
+[8.695589] (alma_erste_abgabe) StdoutLine: {'line': b'writing entry points to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/entry_points.txt\n'}
+[8.698888] (alma_erste_abgabe) StdoutLine: {'line': b'writing requirements to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/requires.txt\n'}
+[8.702656] (alma_erste_abgabe) StdoutLine: {'line': b'writing top-level names to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/top_level.txt\n'}
+[8.710262] (alma_erste_abgabe) StdoutLine: {'line': b"reading manifest file '../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/SOURCES.txt'\n"}
+[8.714473] (alma_camera) StdoutLine: {'line': b'running egg_info\n'}
+[8.717499] (alma_erste_abgabe) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[8.722592] (alma_camera) StdoutLine: {'line': b'writing ../../build/alma_camera/alma_camera.egg-info/PKG-INFO\n'}
+[8.725491] (alma_erste_abgabe) StdoutLine: {'line': b"writing manifest file '../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/SOURCES.txt'\n"}
+[8.738484] (-) TimerEvent: {}
+[8.739231] (alma_erste_abgabe) StdoutLine: {'line': b'running build\n'}
+[8.739901] (alma_erste_abgabe) StdoutLine: {'line': b'running build_py\n'}
+[8.740431] (alma_camera) StdoutLine: {'line': b'writing dependency_links to ../../build/alma_camera/alma_camera.egg-info/dependency_links.txt\n'}
+[8.740957] (alma_camera) StdoutLine: {'line': b'writing entry points to ../../build/alma_camera/alma_camera.egg-info/entry_points.txt\n'}
+[8.758512] (alma_camera) StdoutLine: {'line': b'writing requirements to ../../build/alma_camera/alma_camera.egg-info/requires.txt\n'}
+[8.761079] (alma_erste_abgabe) StdoutLine: {'line': b'running install\n'}
+[8.767459] (alma_camera) StdoutLine: {'line': b'writing top-level names to ../../build/alma_camera/alma_camera.egg-info/top_level.txt\n'}
+[8.773540] (alma_erste_abgabe) StdoutLine: {'line': b'running install_lib\n'}
+[8.776433] (alma_erste_abgabe) StdoutLine: {'line': b'running install_data\n'}
+[8.779022] (alma_erste_abgabe) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.779638] (alma_camera) StdoutLine: {'line': b"reading manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'\n"}
+[8.782813] (alma_camera) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[8.785441] (alma_camera) StdoutLine: {'line': b"writing manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'\n"}
+[8.788857] (alma_erste_abgabe) StdoutLine: {'line': b"removing '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.793036] (alma_erste_abgabe) StdoutLine: {'line': b'Copying ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe-0.0.0-py3.10.egg-info\n'}
+[8.797347] (alma_camera) StdoutLine: {'line': b'running build\n'}
+[8.801079] (alma_camera) StdoutLine: {'line': b'running build_py\n'}
+[8.805008] (alma_camera) StdoutLine: {'line': b'copying alma_camera/camera_drive_commands_3.py -> /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera\n'}
+[8.805534] (alma_camera) StdoutLine: {'line': b'running install\n'}
+[8.806078] (alma_camera) StdoutLine: {'line': b'running install_lib\n'}
+[8.807116] (alma_ultrasound) StdoutLine: {'line': b'running egg_info\n'}
+[8.811157] (alma_erste_abgabe) StdoutLine: {'line': b'running install_scripts\n'}
+[8.811629] (alma_ultrasound) StdoutLine: {'line': b'writing ../../build/alma_ultrasound/alma_ultrasound.egg-info/PKG-INFO\n'}
+[8.812041] (alma_ultrasound) StdoutLine: {'line': b'writing dependency_links to ../../build/alma_ultrasound/alma_ultrasound.egg-info/dependency_links.txt\n'}
+[8.812446] (alma_ultrasound) StdoutLine: {'line': b'writing entry points to ../../build/alma_ultrasound/alma_ultrasound.egg-info/entry_points.txt\n'}
+[8.812829] (alma_camera) StdoutLine: {'line': b'copying /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera/camera_drive_commands_3.py -> /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera\n'}
+[8.813239] (alma_ultrasound) StdoutLine: {'line': b'writing requirements to ../../build/alma_ultrasound/alma_ultrasound.egg-info/requires.txt\n'}
+[8.813630] (alma_ultrasound) StdoutLine: {'line': b'writing top-level names to ../../build/alma_ultrasound/alma_ultrasound.egg-info/top_level.txt\n'}
+[8.814053] (alma_camera) StdoutLine: {'line': b'byte-compiling /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera/camera_drive_commands_3.py to camera_drive_commands_3.cpython-310.pyc\n'}
+[8.814687] (alma_ultrasound) StdoutLine: {'line': b"reading manifest file '../../build/alma_ultrasound/alma_ultrasound.egg-info/SOURCES.txt'\n"}
+[8.815176] (alma_ultrasound) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[8.816062] (alma_ultrasound) StdoutLine: {'line': b"writing manifest file '../../build/alma_ultrasound/alma_ultrasound.egg-info/SOURCES.txt'\n"}
+[8.816837] (alma_ultrasound) StdoutLine: {'line': b'running build\n'}
+[8.817442] (alma_ultrasound) StdoutLine: {'line': b'running build_py\n'}
+[8.817956] (alma_camera) StdoutLine: {'line': b'running install_data\n'}
+[8.818746] (alma_ultrasound) StdoutLine: {'line': b'running install\n'}
+[8.819342] (alma_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.819955] (alma_ultrasound) StdoutLine: {'line': b'running install_lib\n'}
+[8.820736] (alma_ultrasound) StdoutLine: {'line': b'running install_data\n'}
+[8.821363] (alma_ultrasound) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.821881] (alma_camera) StdoutLine: {'line': b"removing '/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.822805] (alma_ultrasound) StdoutLine: {'line': b"removing '/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages/alma_ultrasound-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[8.823433] (alma_ultrasound) StdoutLine: {'line': b'Copying ../../build/alma_ultrasound/alma_ultrasound.egg-info to /home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages/alma_ultrasound-0.0.0-py3.10.egg-info\n'}
+[8.824187] (alma_camera) StdoutLine: {'line': b'Copying ../../build/alma_camera/alma_camera.egg-info to /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info\n'}
+[8.824663] (alma_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[8.825152] (alma_ultrasound) StdoutLine: {'line': b'running install_scripts\n'}
+[8.846409] (-) TimerEvent: {}
+[8.897896] (alma_erste_abgabe) StdoutLine: {'line': b'Installing listener script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe\n'}
+[8.899303] (alma_erste_abgabe) StdoutLine: {'line': b'Installing talker script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe\n'}
+[8.907585] (alma_erste_abgabe) StdoutLine: {'line': b"writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log'\n"}
+[8.946749] (-) TimerEvent: {}
+[8.956238] (alma_camera) StdoutLine: {'line': b'Installing camer_drive_commands_2 script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[8.960481] (alma_camera) StdoutLine: {'line': b'Installing camera_colorHSV_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[8.967736] (alma_camera) StdoutLine: {'line': b'Installing camera_drive_commands script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[8.971373] (alma_camera) StdoutLine: {'line': b'Installing camera_drive_commands_3 script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[8.987164] (alma_camera) StdoutLine: {'line': b'Installing camera_image_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[8.988382] (alma_camera) StdoutLine: {'line': b'Installing camera_line_detector script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[8.989215] (alma_camera) StdoutLine: {'line': b'Installing camera_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[9.002233] (alma_ultrasound) StdoutLine: {'line': b'Installing ultrasound_pub script to /home/pi/robotik_alma_ws/install/alma_ultrasound/lib/alma_ultrasound\n'}
+[9.009137] (alma_ultrasound) StdoutLine: {'line': b"writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_ultrasound/install.log'\n"}
+[9.032274] (alma_camera) StdoutLine: {'line': b"writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_camera/install.log'\n"}
+[9.047183] (-) TimerEvent: {}
+[9.153287] (-) TimerEvent: {}
+[9.203632] (alma_erste_abgabe) CommandEnded: {'returncode': 0}
+[9.255159] (-) TimerEvent: {}
+[9.345713] (alma_erste_abgabe) JobEnded: {'identifier': 'alma_erste_abgabe', 'rc': 0}
+[9.351998] (alma_ultrasound) CommandEnded: {'returncode': 0}
+[9.355467] (-) TimerEvent: {}
+[9.387710] (alma_ultrasound) JobEnded: {'identifier': 'alma_ultrasound', 'rc': 0}
+[9.392347] (alma_camera) CommandEnded: {'returncode': 0}
+[9.428360] (alma_camera) JobEnded: {'identifier': 'alma_camera', 'rc': 0}
+[9.431775] (-) EventReactorShutdown: {}

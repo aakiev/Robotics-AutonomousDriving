@@ -1,1 +1,0 @@
-/home/pi/robotik_alma_ws/src/alma_erste_abgabe/setup.py

@@ -1,0 +1,23 @@
+[7.062s] Invoking command in '/home/pi/robotik_alma_ws/src/alma_erste_abgabe': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_erste_abgabe build --build-base /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build install --record /home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log --single-version-externally-managed install_data
+[8.958s] running egg_info
+[8.969s] writing ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/PKG-INFO
+[8.977s] writing dependency_links to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/dependency_links.txt
+[8.980s] writing entry points to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/entry_points.txt
+[8.983s] writing requirements to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/requires.txt
+[8.987s] writing top-level names to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/top_level.txt
+[9.011s] reading manifest file '../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/SOURCES.txt'
+[9.015s] adding license file 'LICENSE'
+[9.015s] writing manifest file '../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/SOURCES.txt'
+[9.016s] running build
+[9.016s] running build_py
+[9.020s] running install
+[9.021s] running install_lib
+[9.036s] running install_data
+[9.037s] running install_egg_info
+[9.040s] removing '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe-0.0.0-py3.10.egg-info' (and everything under it)
+[9.047s] Copying ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe-0.0.0-py3.10.egg-info
+[9.050s] running install_scripts
+[9.181s] Installing listener script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe
+[9.185s] Installing talker script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe
+[9.189s] writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log'
+[9.525s] Invoked command in '/home/pi/robotik_alma_ws/src/alma_erste_abgabe' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_erste_abgabe build --build-base /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build install --record /home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log --single-version-externally-managed install_data

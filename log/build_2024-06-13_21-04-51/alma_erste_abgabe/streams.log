@@ -1,0 +1,37 @@
+[20.134s] Invoking command in '/home/pi/robotik_alma_ws/build/alma_erste_abgabe': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build
+[26.930s] running develop
+[27.026s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[27.040s]   warnings.warn(
+[30.512s] Removing /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma-erste-abgabe.egg-link (link to .)
+[30.827s] Invoked command in '/home/pi/robotik_alma_ws/build/alma_erste_abgabe' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build
+[30.837s] Invoking command in '/home/pi/robotik_alma_ws/src/alma_erste_abgabe': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_erste_abgabe build --build-base /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build install --record /home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log --single-version-externally-managed install_data --force
+[34.626s] running egg_info
+[34.637s] writing ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/PKG-INFO
+[34.646s] writing dependency_links to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/dependency_links.txt
+[34.654s] writing entry points to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/entry_points.txt
+[34.657s] writing requirements to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/requires.txt
+[34.661s] writing top-level names to ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/top_level.txt
+[34.697s] reading manifest file '../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/SOURCES.txt'
+[34.705s] adding license file 'LICENSE'
+[34.713s] writing manifest file '../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info/SOURCES.txt'
+[34.716s] running build
+[34.719s] running build_py
+[34.726s] running install
+[34.731s] running install_lib
+[34.742s] creating /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe
+[34.746s] copying /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build/lib/alma_erste_abgabe/publisher_member_function.py -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe
+[34.753s] copying /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build/lib/alma_erste_abgabe/__init__.py -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe
+[34.760s] copying /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build/lib/alma_erste_abgabe/subscriber_member_function.py -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe
+[34.769s] byte-compiling /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe/publisher_member_function.py to publisher_member_function.cpython-310.pyc
+[34.776s] byte-compiling /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe/__init__.py to __init__.cpython-310.pyc
+[34.781s] byte-compiling /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[34.787s] running install_data
+[34.789s] copying resource/alma_erste_abgabe -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/ament_index/resource_index/packages
+[34.793s] copying package.xml -> /home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe
+[34.797s] running install_egg_info
+[34.828s] Copying ../../build/alma_erste_abgabe/alma_erste_abgabe.egg-info to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages/alma_erste_abgabe-0.0.0-py3.10.egg-info
+[34.865s] running install_scripts
+[35.138s] Installing listener script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe
+[35.142s] Installing talker script to /home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/alma_erste_abgabe
+[35.151s] writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log'
+[35.464s] Invoked command in '/home/pi/robotik_alma_ws/src/alma_erste_abgabe' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_erste_abgabe build --build-base /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build install --record /home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log --single-version-externally-managed install_data --force

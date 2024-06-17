@@ -1,0 +1,35 @@
+[3.204s] Invoking command in '/home/pi/robotik_alma_ws/src/alma_camera': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data
+[4.457s] running egg_info
+[4.461s] writing ../../build/alma_camera/alma_camera.egg-info/PKG-INFO
+[4.465s] writing dependency_links to ../../build/alma_camera/alma_camera.egg-info/dependency_links.txt
+[4.466s] writing entry points to ../../build/alma_camera/alma_camera.egg-info/entry_points.txt
+[4.467s] writing requirements to ../../build/alma_camera/alma_camera.egg-info/requires.txt
+[4.467s] writing top-level names to ../../build/alma_camera/alma_camera.egg-info/top_level.txt
+[4.476s] reading manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'
+[4.479s] adding license file 'LICENSE'
+[4.481s] writing manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'
+[4.483s] running build
+[4.483s] running build_py
+[4.484s] copying alma_camera/camera_line_detection.py -> /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera
+[4.488s] running install
+[4.489s] running install_lib
+[4.494s] copying /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera/camera_line_detection.py -> /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera
+[4.499s] byte-compiling /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera/camera_line_detection.py to camera_line_detection.cpython-310.pyc
+[4.504s] Sorry: IndentationError: expected an indented block after function definition on line 99 (camera_line_detection.py, line 100)
+[4.506s] running install_data
+[4.506s] running install_egg_info
+[4.517s] removing '/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[4.519s] Copying ../../build/alma_camera/alma_camera.egg-info to /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info
+[4.526s] running install_scripts
+[4.610s] Installing camer_drive_commands_2 script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.611s] Installing camera_colorHSV_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.612s] Installing camera_drive_commands script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.613s] Installing camera_drive_commands_3 script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.614s] Installing camera_image_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.615s] Installing camera_line_detection script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.616s] Installing camera_line_detector script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.616s] Installing camera_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.617s] Installing camera_track script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.618s] Installing camera_track_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.621s] writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_camera/install.log'
+[4.744s] Invoked command in '/home/pi/robotik_alma_ws/src/alma_camera' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data

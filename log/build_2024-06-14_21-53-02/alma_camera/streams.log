@@ -1,0 +1,30 @@
+[2.792s] Invoking command in '/home/pi/robotik_alma_ws/src/alma_camera': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data
+[3.910s] running egg_info
+[3.913s] writing ../../build/alma_camera/alma_camera.egg-info/PKG-INFO
+[3.914s] writing dependency_links to ../../build/alma_camera/alma_camera.egg-info/dependency_links.txt
+[3.915s] writing entry points to ../../build/alma_camera/alma_camera.egg-info/entry_points.txt
+[3.916s] writing requirements to ../../build/alma_camera/alma_camera.egg-info/requires.txt
+[3.917s] writing top-level names to ../../build/alma_camera/alma_camera.egg-info/top_level.txt
+[3.926s] reading manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'
+[3.927s] adding license file 'LICENSE'
+[3.930s] writing manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'
+[3.931s] running build
+[3.931s] running build_py
+[3.936s] running install
+[3.937s] running install_lib
+[3.946s] running install_data
+[3.946s] running install_egg_info
+[3.953s] removing '/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[3.955s] Copying ../../build/alma_camera/alma_camera.egg-info to /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info
+[3.960s] running install_scripts
+[4.043s] Installing camer_drive_commands_2 script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.043s] Installing camera_colorHSV_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.044s] Installing camera_drive_commands script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.045s] Installing camera_drive_commands_3 script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.046s] Installing camera_image_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.047s] Installing camera_line_detector script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.048s] Installing camera_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.049s] Installing camera_track script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.050s] Installing camera_track_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+[4.052s] writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_camera/install.log'
+[4.173s] Invoked command in '/home/pi/robotik_alma_ws/src/alma_camera' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data

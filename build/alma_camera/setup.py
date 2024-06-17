@@ -1,1 +1,0 @@
-/home/pi/robotik_alma_ws/src/alma_camera/setup.py

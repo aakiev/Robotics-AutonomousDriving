@@ -1,169 +1,191 @@
 #include <Servo.h>
+//---------------------microROS---------------------------------------
+#include <micro_ros_arduino.h>
 
+#include <stdio.h>
+#include <rcl/rcl.h>
+#include <rcl/error_handling.h>
+#include <rclc/rclc.h>
+#include <rclc/executor.h>
+#include <rmw_microros/rmw_microros.h>
+
+#include <std_msgs/msg/int32.h>
+
+#define LED_PIN 13
+#define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){return false;}}
+#define EXECUTE_EVERY_N_MS(MS, X)  do { \
+  static volatile int64_t init = -1; \
+  if (init == -1) { init = uxr_millis();} \
+  if (uxr_millis() - init > MS) { X; init = uxr_millis();} \
+} while (0)\
+
+rclc_support_t support;
+rcl_node_t node;
+rcl_timer_t timer;
+rclc_executor_t executor_sub;
+rclc_executor_t executor_pub;
+rcl_allocator_t allocator;
+rcl_publisher_t publisher;
+rcl_subscription_t subscriber;
+std_msgs__msg__Int32 msg;
+std_msgs__msg__Int32 timer_data;
+bool micro_ros_init_successful;
+
+enum states {
+  WAITING_AGENT,
+  AGENT_AVAILABLE,
+  AGENT_CONNECTED,
+  AGENT_DISCONNECTED
+} state;
+
+void timer_callback(rcl_timer_t * timer, int64_t last_call_time)
+{
+  (void) last_call_time;
+  if (timer != NULL) {
+    rcl_publish(&publisher, &timer_data, NULL);
+    
+  }
+}
+
+// Functions create_entities and destroy_entities can take several seconds.
+// In order to reduce this rebuild the library with
+// - RMW_UXRCE_ENTITY_CREATION_DESTROY_TIMEOUT=0
+// - UCLIENT_MAX_SESSION_CONNECTION_ATTEMPTS=3
+
+bool create_entities()
+{
+  allocator = rcl_get_default_allocator();
+  rcl_init_options_t init_options = rcl_get_zero_initialized_init_options();
+  rcl_init_options_init(&init_options, allocator);
+  rcl_init_options_set_domain_id(&init_options, 7);
+
+  // create init_options
+  RCCHECK(rclc_support_init_with_options(&support, 0, NULL, &init_options ,&allocator));
+
+  // create node
+  RCCHECK(rclc_node_init_default(&node, "danlias_teensy_node", "", &support));
+
+  // create publisher
+  RCCHECK(rclc_publisher_init_best_effort(
+    &publisher,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+    "danlias_echo"));
+
+  //create subscriber
+  RCCHECK(rclc_subscription_init_default(
+    &subscriber,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+    "danlias_commands"));
+
+  // create timer,
+  const unsigned int timer_timeout = 3000;
+  RCCHECK(rclc_timer_init_default(
+    &timer,
+    &support,
+    RCL_MS_TO_NS(timer_timeout),
+    timer_callback));
+
+  // create executor_sub
+  executor_sub = rclc_executor_get_zero_initialized_executor();
+  RCCHECK(rclc_executor_init(&executor_sub, &support.context, 1, &allocator));
+  RCCHECK(rclc_executor_add_subscription(&executor_sub, &subscriber, &msg, &subscription_callback, ON_NEW_DATA));
+  return true;
+
+  //create executor_pub
+  // executor_pub = rclc_executor_get_zero_initialized_executor();
+  // RCCHECK(rclc_executor_init(&executor_pub, &support.context, 1, &allocator));
+  // RCCHECK(rclc_executor_add_timer(&executor_pub, &timer));
+
+ 
+}
+
+void destroy_entities()
+{
+  rmw_context_t * rmw_context = rcl_context_get_rmw_context(&support.context);
+  (void) rmw_uros_set_context_entity_destroy_session_timeout(rmw_context, 0);
+
+  rcl_publisher_fini(&publisher, &node);
+  rcl_subscription_fini(&subscriber, &node);
+  rcl_timer_fini(&timer);
+  rclc_executor_fini(&executor_sub);
+  rcl_node_fini(&node);
+  rclc_support_fini(&support);
+}
+
+//-------------------------End of microROS------------------------------
 Servo servoRight;
 Servo servoLeft;
 
-int pos = 0;
-byte pinServoLeft = 11;
-byte pinServoRight = 10;
-byte pinFeedbackLeft = 7;
-byte pinFeedbackRight = 8;
+//Motorconnections
+constexpr int pinFeedbackLeft = 7;
+constexpr int pinFeedbackRight = 8;
+constexpr int pinControlLeft = 11;
+constexpr int pinControlRight = 10;
 
-unsigned long highRight = 0, highLeft = 0;
-unsigned long lowRight = 0, lowLeft = 0;
-char keyCommand;
-double dutyCycleRight = 0.0, dutyCycleLeft = 0.0;
-unsigned long cycleTimeRight, cycleTimeLeft;
-double totalCycle = 1098.901;
-double thetaRight = 0.0, thetaLeft = 0.0;
-double thetaRightPrev = 0.0, thetaLeftPrev = 0.0;
-int turnsRight = 0, turnsLeft = 0;
-double deltaThetaRight = 0, deltaThetaLeft = 0;
-double totalThetaRight = 0, totalThetaLeft = 0;
-int PcontrolRight = 0, PcontrolLeft = 0;
-int laufVariable = 0 ; 
-int distance = 0 ; 
-double distanceRight = 0 ; 
-double distanceLeft = 0 ; 
-double errorLeft = 0 ; 
-double errorRight = 0 ; 
-double targetDistance = 200; 
 
-void calculateThetaRight();
-void calculateThetaLeft();
-void Pcontroller();
-void printInfos();
-void two_meters_drive(); 
-
-void setup(){
-  Serial.begin(9600);
-  pinMode(pinFeedbackRight, INPUT);
-  pinMode(pinFeedbackLeft, INPUT);
+void motors_move(int right, int left){
+      servoRight.writeMicroseconds(right);
+      servoLeft.writeMicroseconds(left);
 }
 
-void loop(){
-  if (Serial.available() > 0){
-    keyCommand = Serial.read();
-    
-    switch(keyCommand){
-      case 's': 
-        servoRight.attach(pinServoRight);
-        servoLeft.attach(pinServoLeft);
-        servoRight.write(90 );
-        servoLeft.write(90);
-        delay(500);
-        servoRight.detach();
-        servoLeft.detach();
-        break;
-      case 'w': 
-        servoRight.attach(pinServoRight);
-        servoLeft.attach(pinServoLeft);
-        servoRight.write(91);
-        servoLeft.write(91);
-        delay(500);
-        servoRight.detach();
-        servoLeft.detach();
-        break;
-      case 'a': 
-        servoRight.attach(pinServoRight);
-        servoLeft.attach(pinServoLeft);
-        servoRight.write(92);
-        servoLeft.write(92);
-        delay(500);
-        servoRight.detach();
-        servoLeft.detach();
-        break;
-      case 'd': 
-        servoRight.attach(pinServoRight);
-        servoLeft.attach(pinServoLeft);
-        servoRight.write(93);
-        servoLeft.write(93);
-        delay(500);
-        servoRight.detach();
-        servoLeft.detach();
-        break;
-      default: break;
-    }
-    
-    calculateThetaRight();
-    calculateThetaLeft();
-    Pcontroller();
+void subscription_callback(const void * msgin)
+{  
+  const std_msgs__msg__Int32 * msg = (const std_msgs__msg__Int32 *)msgin;
+  digitalWrite(LED_PIN, (msg->data == 0) ? LOW : HIGH); 
+  rcl_publish(&publisher, msg, NULL);
+  if (msg->data == 0) motors_move(1500, 1500);
+  else if (msg->data == 1) motors_move(1500-84, 1500+53); //-104 //+73
+  else if (msg->data == 2) motors_move(1500+93, 1500-128);
+  else if (msg->data == 3) motors_move(1500-60, 1500-60); //turn left //je um 5 erhöht
+  else if (msg->data == 4) motors_move(1500+60, 1500+60); //turn right
+  else if (msg->data == 5) motors_move(1500-70, 1500+53); //moving turn left //methode für langsam um die kurve muss noch
+  else if (msg->data == 6) motors_move(1500-84, 1500+43); //moving turn left
+
+}
+
+void setup() {
+  set_microros_transports();
+  pinMode(LED_PIN, OUTPUT);
+
+  state = WAITING_AGENT;
+
+  timer_data.data = 420;
+  servoRight.attach(pinControlRight);
+  servoLeft.attach(pinControlLeft);
+}
+
+void loop() {
+  switch (state) {
+    case WAITING_AGENT:
+      EXECUTE_EVERY_N_MS(500, state = (RMW_RET_OK == rmw_uros_ping_agent(100, 1)) ? AGENT_AVAILABLE : WAITING_AGENT;);
+      break;
+    case AGENT_AVAILABLE:
+      state = (true == create_entities()) ? AGENT_CONNECTED : WAITING_AGENT;
+      if (state == WAITING_AGENT) {
+        destroy_entities();
+      };
+      break;
+    case AGENT_CONNECTED:
+      EXECUTE_EVERY_N_MS(200, state = (RMW_RET_OK == rmw_uros_ping_agent(100, 1)) ? AGENT_CONNECTED : AGENT_DISCONNECTED;);
+      if (state == AGENT_CONNECTED) {
+        rclc_executor_spin_some(&executor_sub, RCL_MS_TO_NS(100)); //führt den executor_sub aus, in unserem Fall subscription callback
+      }
+      break;
+    case AGENT_DISCONNECTED:
+      destroy_entities();
+      state = WAITING_AGENT;
+      break;
+    default:
+      break;
   }
-}
-
-void Pcontroller(){
-  double avgDistance = (distanceRight + distanceLeft) / 2.0;
-    errorRight = targetDistance - distanceRight;
-    errorLeft = targetDistance - distanceLeft;
-    integralRight += errorRight;
-    integralLeft += errorLeft;
-    double controlSignalRight = Kp * errorRight + Ki * integralRight;
-    double controlSignalLeft = Kp * errorLeft + Ki * integralLeft;
-
-    // Steuerung der Motoren basierend auf dem PI-Regler
-    PcontrolRight = controlSignalRight;
-    PcontrolLeft = controlSignalLeft;
-    
-    servoRight.attach(pinServoRight);
-    servoLeft.attach(pinServoLeft);
-    servoRight.write(90 + PcontrolRight);
-    servoLeft.write(90 - PcontrolLeft);
-    delay(50);
-    servoRight.detach();
-    servoLeft.detach();
-}
-
-void printInfos(){
-  Serial.print("ThetaRight: ");
-  Serial.println(thetaRight); 
-  Serial.print("ThetaLeft: ");
-  Serial.println(thetaLeft);
-}
-void two_meters_drive(){
-thetaRight = 0 ; 
-thetaLeft = 0 ; 
-
-while(distance <= 2){
-  servoRight.attach(pinServoRight);
-        servoLeft.attach(pinServoLeft);
-        servoRight.write(90 );
-        servoLeft.write(90);
-        delay(500);
-        servoRight.detach();
-        servoLeft.detach();
-        calculateThetaRight(); 
-        calculateThetaLeft(); 
-        if(thetaRight < thetaRightPrev && thetaLeft < thetaLeftPrev){
-          laufVariable += 1; 
-        }
-}
 
 
-}
-void calculateThetaRight(){
-  while(1){
-    highRight = pulseIn(pinFeedbackRight, HIGH); 
-    lowRight = pulseIn(pinFeedbackRight, LOW); 
-    cycleTimeRight = highRight + lowRight; 
-    if((cycleTimeRight > 1000) && (cycleTimeRight < 1200)){
-      break; 
-    }
+  //error feedback
+  if (state != AGENT_CONNECTED){
+    digitalWrite(LED_PIN, 1);
+    delay(10);
+    digitalWrite(LED_PIN, 0);
   }
-  dutyCycleRight = (100 * highRight) / cycleTimeRight; 
-  thetaRightPrev = thetaRight; 
-  thetaRight = 359 - ((dutyCycleRight - 2.9) * 360) / (97.1 - 2.9 + 1);  
-}
-
-void calculateThetaLeft(){
-  while(1){
-    highLeft = pulseIn(pinFeedbackLeft, HIGH); 
-    lowLeft = pulseIn(pinFeedbackLeft, LOW); 
-    cycleTimeLeft = highLeft + lowLeft; 
-    if((cycleTimeLeft > 1000) && (cycleTimeLeft < 1200)){
-      break; 
-    }
-  }
-  dutyCycleLeft = (100 * highLeft) / cycleTimeLeft; 
-  thetaLeftPrev = thetaLeft; 
-  thetaLeft = 359 - ((dutyCycleLeft - 2.9) * 360) / (97.1 - 2.9 + 1);  
 }

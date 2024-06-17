@@ -24,6 +24,13 @@ setup(
            'camera_image_sub = alma_camera.image_subscriber:main', 
            'camera_colorHSV_sub = alma_camera.colorHSV_subscriber:main',
            'camera_line_detector = alma_camera.camera_line_detector:main',
+           'camera_drive_commands = alma_camera.camera_drive_commands:main',
+           'camer_drive_commands_2 = alma_camera.camer_drive_commands_2:main',
+           'camera_drive_commands_3 = alma_camera.camera_drive_commands_3:main',
+           'camera_track = alma_camera.camera_track:main',
+           'camera_track_pub = alma_camera.camera_track_pub:main',
+           'camera_line_detection = alma_camera.camera_line_detection:main',
+           
         ],
     },
 )

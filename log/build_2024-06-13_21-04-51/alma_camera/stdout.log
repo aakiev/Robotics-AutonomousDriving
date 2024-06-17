@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/alma_camera/alma_camera.egg-info/PKG-INFO
+writing dependency_links to ../../build/alma_camera/alma_camera.egg-info/dependency_links.txt
+writing entry points to ../../build/alma_camera/alma_camera.egg-info/entry_points.txt
+writing requirements to ../../build/alma_camera/alma_camera.egg-info/requires.txt
+writing top-level names to ../../build/alma_camera/alma_camera.egg-info/top_level.txt
+reading manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'
+running build
+running build_py
+copying alma_camera/camer_drive_commands_2.py -> /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera
+running install
+running install_lib
+copying /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera/camer_drive_commands_2.py -> /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera
+byte-compiling /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera/camer_drive_commands_2.py to camer_drive_commands_2.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/alma_camera/alma_camera.egg-info to /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info
+running install_scripts
+Installing camer_drive_commands_2 script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+Installing camera_colorHSV_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+Installing camera_drive_commands script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+Installing camera_image_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+Installing camera_line_detector script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+Installing camera_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera
+writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_camera/install.log'

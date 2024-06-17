@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.001525] (-) JobUnselected: {'identifier': 'alma_erste_abgabe'}
+[0.002784] (-) JobUnselected: {'identifier': 'alma_ultrasound'}
+[0.002990] (alma_camera) JobQueued: {'identifier': 'alma_camera', 'dependencies': OrderedDict()}
+[0.003152] (alma_camera) JobStarted: {'identifier': 'alma_camera'}
+[0.099122] (-) TimerEvent: {}
+[0.203112] (-) TimerEvent: {}
+[0.304628] (-) TimerEvent: {}
+[0.405297] (-) TimerEvent: {}
+[0.506135] (-) TimerEvent: {}
+[0.607468] (-) TimerEvent: {}
+[0.708177] (-) TimerEvent: {}
+[0.809030] (-) TimerEvent: {}
+[0.909745] (-) TimerEvent: {}
+[1.010883] (-) TimerEvent: {}
+[1.112183] (-) TimerEvent: {}
+[1.212831] (-) TimerEvent: {}
+[1.313846] (-) TimerEvent: {}
+[1.414755] (-) TimerEvent: {}
+[1.515454] (-) TimerEvent: {}
+[1.616347] (-) TimerEvent: {}
+[1.717047] (-) TimerEvent: {}
+[1.817965] (-) TimerEvent: {}
+[1.919856] (-) TimerEvent: {}
+[2.021808] (-) TimerEvent: {}
+[2.123322] (-) TimerEvent: {}
+[2.225587] (-) TimerEvent: {}
+[2.326818] (-) TimerEvent: {}
+[2.427540] (-) TimerEvent: {}
+[2.528325] (-) TimerEvent: {}
+[2.629355] (-) TimerEvent: {}
+[2.730342] (-) TimerEvent: {}
+[2.831191] (-) TimerEvent: {}
+[2.931892] (-) TimerEvent: {}
+[3.032853] (-) TimerEvent: {}
+[3.133897] (-) TimerEvent: {}
+[3.234618] (-) TimerEvent: {}
+[3.335390] (-) TimerEvent: {}
+[3.439375] (-) TimerEvent: {}
+[3.540740] (-) TimerEvent: {}
+[3.641453] (-) TimerEvent: {}
+[3.742287] (-) TimerEvent: {}
+[3.843258] (-) TimerEvent: {}
+[3.944576] (-) TimerEvent: {}
+[4.045786] (-) TimerEvent: {}
+[4.147546] (-) TimerEvent: {}
+[4.195919] (alma_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/alma_camera', 'build', '--build-base', '/home/pi/robotik_alma_ws/build/alma_camera/build', 'install', '--record', '/home/pi/robotik_alma_ws/build/alma_camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/robotik_alma_ws/src/alma_camera', 'env': {'OPENBLAS_CORETYPE': 'ARMV8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/aarch64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/pi', 'OLDPWD': '/home/pi', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'de_DE.UTF-8', 'SYSTEMD_EXEC_PID': '4422', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/pi/robotik_alma_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/iron/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/pi-desktop:@/tmp/.ICE-unix/1176,unix/pi-desktop:/tmp/.ICE-unix/1176', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d26e8afe_9628_4acf_b0bb_5af17122439a', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DOK9O2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.118', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/pi/robotik_alma_ws/install/alma_ultrasound:/home/pi/robotik_alma_ws/install/alma_erste_abgabe:/home/pi/robotik_alma_ws/install/alma_camera:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pi/robotik_alma_ws/build/alma_camera', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/build/alma_erste_abgabe:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.247830] (-) TimerEvent: {}
+[4.348824] (-) TimerEvent: {}
+[4.450037] (-) TimerEvent: {}
+[4.551371] (-) TimerEvent: {}
+[4.652627] (-) TimerEvent: {}
+[4.754090] (-) TimerEvent: {}
+[4.855299] (-) TimerEvent: {}
+[4.956002] (-) TimerEvent: {}
+[5.056755] (-) TimerEvent: {}
+[5.157861] (-) TimerEvent: {}
+[5.258805] (-) TimerEvent: {}
+[5.359732] (-) TimerEvent: {}
+[5.460492] (-) TimerEvent: {}
+[5.561708] (-) TimerEvent: {}
+[5.663070] (-) TimerEvent: {}
+[5.763940] (-) TimerEvent: {}
+[5.865200] (-) TimerEvent: {}
+[5.931376] (alma_camera) StdoutLine: {'line': b'running egg_info\n'}
+[5.936018] (alma_camera) StdoutLine: {'line': b'writing ../../build/alma_camera/alma_camera.egg-info/PKG-INFO\n'}
+[5.937114] (alma_camera) StdoutLine: {'line': b'writing dependency_links to ../../build/alma_camera/alma_camera.egg-info/dependency_links.txt\n'}
+[5.938270] (alma_camera) StdoutLine: {'line': b'writing entry points to ../../build/alma_camera/alma_camera.egg-info/entry_points.txt\n'}
+[5.939496] (alma_camera) StdoutLine: {'line': b'writing requirements to ../../build/alma_camera/alma_camera.egg-info/requires.txt\n'}
+[5.940319] (alma_camera) StdoutLine: {'line': b'writing top-level names to ../../build/alma_camera/alma_camera.egg-info/top_level.txt\n'}
+[5.949718] (alma_camera) StdoutLine: {'line': b"reading manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'\n"}
+[5.951258] (alma_camera) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[5.954279] (alma_camera) StdoutLine: {'line': b"writing manifest file '../../build/alma_camera/alma_camera.egg-info/SOURCES.txt'\n"}
+[5.955180] (alma_camera) StdoutLine: {'line': b'running build\n'}
+[5.955924] (alma_camera) StdoutLine: {'line': b'running build_py\n'}
+[5.957525] (alma_camera) StdoutLine: {'line': b'copying alma_camera/camera_drive_commands.py -> /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera\n'}
+[5.960767] (alma_camera) StdoutLine: {'line': b'running install\n'}
+[5.963379] (alma_camera) StdoutLine: {'line': b'running install_lib\n'}
+[5.968905] (-) TimerEvent: {}
+[5.972536] (alma_camera) StdoutLine: {'line': b'copying /home/pi/robotik_alma_ws/build/alma_camera/build/lib/alma_camera/camera_drive_commands.py -> /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera\n'}
+[5.979148] (alma_camera) StdoutLine: {'line': b'byte-compiling /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera/camera_drive_commands.py to camera_drive_commands.cpython-310.pyc\n'}
+[5.984448] (alma_camera) StdoutLine: {'line': b'running install_data\n'}
+[5.985506] (alma_camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.997602] (alma_camera) StdoutLine: {'line': b"removing '/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.000409] (alma_camera) StdoutLine: {'line': b'Copying ../../build/alma_camera/alma_camera.egg-info to /home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages/alma_camera-0.0.0-py3.10.egg-info\n'}
+[6.011392] (alma_camera) StdoutLine: {'line': b'running install_scripts\n'}
+[6.069091] (-) TimerEvent: {}
+[6.120013] (alma_camera) StdoutLine: {'line': b'Installing camera_colorHSV_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[6.122119] (alma_camera) StdoutLine: {'line': b'Installing camera_drive_commands script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[6.123473] (alma_camera) StdoutLine: {'line': b'Installing camera_image_sub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[6.126405] (alma_camera) StdoutLine: {'line': b'Installing camera_line_detector script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[6.129880] (alma_camera) StdoutLine: {'line': b'Installing camera_pub script to /home/pi/robotik_alma_ws/install/alma_camera/lib/alma_camera\n'}
+[6.133150] (alma_camera) StdoutLine: {'line': b"writing list of installed files to '/home/pi/robotik_alma_ws/build/alma_camera/install.log'\n"}
+[6.169928] (-) TimerEvent: {}
+[6.271702] (-) TimerEvent: {}
+[6.320110] (alma_camera) CommandEnded: {'returncode': 0}
+[6.371913] (-) TimerEvent: {}
+[6.397689] (alma_camera) JobEnded: {'identifier': 'alma_camera', 'rc': 0}
+[6.403790] (-) EventReactorShutdown: {}

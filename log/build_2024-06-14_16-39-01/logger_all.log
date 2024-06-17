@@ -1,0 +1,423 @@
+[0.485s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.485s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff923190f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff92471d20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff92471d20>>)
+[1.426s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.426s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.426s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.426s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.427s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.427s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.427s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/robotik_alma_ws'
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.428s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.429s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.476s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['ignore', 'ignore_ament_install']
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ignore'
+[1.478s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ignore_ament_install'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['colcon_pkg']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'colcon_pkg'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['colcon_meta']
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'colcon_meta'
+[1.479s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['ros']
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ros'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['cmake', 'python']
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'cmake'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'python'
+[1.480s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['python_setup_py']
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'python_setup_py'
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extensions ['ignore', 'ignore_ament_install']
+[1.481s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extension 'ignore'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extension 'ignore_ament_install'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extensions ['colcon_pkg']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extension 'colcon_pkg'
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extensions ['colcon_meta']
+[1.482s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extension 'colcon_meta'
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extensions ['ros']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extension 'ros'
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extensions ['cmake', 'python']
+[1.483s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extension 'cmake'
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extension 'python'
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extensions ['python_setup_py']
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches) by extension 'python_setup_py'
+[1.484s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extensions ['ignore', 'ignore_ament_install']
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extension 'ignore'
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extension 'ignore_ament_install'
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extensions ['colcon_pkg']
+[1.485s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extension 'colcon_pkg'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extensions ['colcon_meta']
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extension 'colcon_meta'
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extensions ['ros']
+[1.486s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extension 'ros'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extensions ['cmake', 'python']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extension 'cmake'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extension 'python'
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extensions ['python_setup_py']
+[1.487s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Blink) by extension 'python_setup_py'
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extensions ['ignore', 'ignore_ament_install']
+[1.488s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extension 'ignore'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extension 'ignore_ament_install'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extensions ['colcon_pkg']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extension 'colcon_pkg'
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extensions ['colcon_meta']
+[1.489s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extension 'colcon_meta'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extensions ['ros']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extension 'ros'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extensions ['cmake', 'python']
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extension 'cmake'
+[1.490s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extension 'python'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extensions ['python_setup_py']
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Clean_Ultrasonic_data) by extension 'python_setup_py'
+[1.491s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extensions ['ignore', 'ignore_ament_install']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extension 'ignore'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extension 'ignore_ament_install'
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extensions ['colcon_pkg']
+[1.492s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extension 'colcon_pkg'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extensions ['colcon_meta']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extension 'colcon_meta'
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extensions ['ros']
+[1.493s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extension 'ros'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extensions ['cmake', 'python']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extension 'cmake'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extension 'python'
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extensions ['python_setup_py']
+[1.494s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Labor_1-Servo_Ultrasound_with_ArduinoUNO) by extension 'python_setup_py'
+[1.495s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extensions ['ignore', 'ignore_ament_install']
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extension 'ignore'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extension 'ignore_ament_install'
+[1.496s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extensions ['colcon_pkg']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extension 'colcon_pkg'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extensions ['colcon_meta']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extension 'colcon_meta'
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extensions ['ros']
+[1.497s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extension 'ros'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extensions ['cmake', 'python']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extension 'cmake'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extension 'python'
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extensions ['python_setup_py']
+[1.498s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Arduino UNO Sketches/Raw_Servo_and_Ultrasonic_Code) by extension 'python_setup_py'
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extensions ['ignore', 'ignore_ament_install']
+[1.499s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extension 'ignore'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extension 'ignore_ament_install'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extensions ['colcon_pkg']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extension 'colcon_pkg'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extensions ['colcon_meta']
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extension 'colcon_meta'
+[1.500s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extensions ['ros']
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extension 'ros'
+[1.501s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extensions ['cmake', 'python']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extension 'cmake'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extension 'python'
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extensions ['python_setup_py']
+[1.502s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches) by extension 'python_setup_py'
+[1.503s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extensions ['ignore', 'ignore_ament_install']
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extension 'ignore'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extension 'ignore_ament_install'
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extensions ['colcon_pkg']
+[1.504s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extension 'colcon_pkg'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extensions ['colcon_meta']
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extension 'colcon_meta'
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extensions ['ros']
+[1.505s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extension 'ros'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extensions ['cmake', 'python']
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extension 'cmake'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extension 'python'
+[1.506s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extensions ['python_setup_py']
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Grade_Aus_Fahren) by extension 'python_setup_py'
+[1.507s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extensions ['ignore', 'ignore_ament_install']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extension 'ignore'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extension 'ignore_ament_install'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extensions ['colcon_pkg']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extension 'colcon_pkg'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extensions ['colcon_meta']
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extension 'colcon_meta'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extensions ['ros']
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extension 'ros'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extensions ['cmake', 'python']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extension 'cmake'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extension 'python'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extensions ['python_setup_py']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Sanduhr_Quadrat) by extension 'python_setup_py'
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extensions ['ignore', 'ignore_ament_install']
+[1.511s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extension 'ignore'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extension 'ignore_ament_install'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extensions ['colcon_pkg']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extension 'colcon_pkg'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extensions ['colcon_meta']
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extension 'colcon_meta'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extensions ['ros']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extension 'ros'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extensions ['cmake', 'python']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extension 'cmake'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extension 'python'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extensions ['python_setup_py']
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Mit_Ros) by extension 'python_setup_py'
+[1.514s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extensions ['ignore', 'ignore_ament_install']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extension 'ignore'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extension 'ignore_ament_install'
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extensions ['colcon_pkg']
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extension 'colcon_pkg'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extensions ['colcon_meta']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extension 'colcon_meta'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extensions ['ros']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extension 'ros'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extensions ['cmake', 'python']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extension 'cmake'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extension 'python'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extensions ['python_setup_py']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour) by extension 'python_setup_py'
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extensions ['ignore', 'ignore_ament_install']
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extension 'ignore'
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extension 'ignore_ament_install'
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extensions ['colcon_pkg']
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extension 'colcon_pkg'
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extensions ['colcon_meta']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extension 'colcon_meta'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extensions ['ros']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extension 'ros'
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extensions ['cmake', 'python']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extension 'cmake'
+[1.521s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extension 'python'
+[1.521s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extensions ['python_setup_py']
+[1.521s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Servo_Ros_Parkour_2) by extension 'python_setup_py'
+[1.522s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extensions ['ignore', 'ignore_ament_install']
+[1.522s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extension 'ignore'
+[1.522s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extension 'ignore_ament_install'
+[1.523s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extensions ['colcon_pkg']
+[1.523s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extension 'colcon_pkg'
+[1.523s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extensions ['colcon_meta']
+[1.523s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extension 'colcon_meta'
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extensions ['ros']
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extension 'ros'
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extensions ['cmake', 'python']
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extension 'cmake'
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extension 'python'
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extensions ['python_setup_py']
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/Test-Sketch) by extension 'python_setup_py'
+[1.526s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extensions ['ignore', 'ignore_ament_install']
+[1.526s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extension 'ignore'
+[1.526s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extension 'ignore_ament_install'
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extensions ['colcon_pkg']
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extension 'colcon_pkg'
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extensions ['colcon_meta']
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extension 'colcon_meta'
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extensions ['ros']
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extension 'ros'
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extensions ['cmake', 'python']
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extension 'cmake'
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extension 'python'
+[1.530s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extensions ['python_setup_py']
+[1.530s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/Teensy 4.0 Sketches/sketch_Servo360Studentsino) by extension 'python_setup_py'
+[1.531s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.531s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.537s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extensions ['ignore', 'ignore_ament_install']
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'ignore'
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'ignore_ament_install'
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extensions ['colcon_pkg']
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'colcon_pkg'
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extensions ['colcon_meta']
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'colcon_meta'
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extensions ['ros']
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_camera) by extension 'ros'
+[1.549s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alma_camera' with type 'ros.ament_python' and name 'alma_camera'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extensions ['ignore', 'ignore_ament_install']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'ignore'
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'ignore_ament_install'
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extensions ['colcon_pkg']
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'colcon_pkg'
+[1.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extensions ['colcon_meta']
+[1.558s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'colcon_meta'
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extensions ['ros']
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_erste_abgabe) by extension 'ros'
+[1.561s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alma_erste_abgabe' with type 'ros.ament_python' and name 'alma_erste_abgabe'
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extensions ['ignore', 'ignore_ament_install']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extension 'ignore'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extension 'ignore_ament_install'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extensions ['colcon_pkg']
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extension 'colcon_pkg'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extensions ['colcon_meta']
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extension 'colcon_meta'
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extensions ['ros']
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(src/alma_ultrasound) by extension 'ros'
+[1.566s] DEBUG:colcon.colcon_core.package_identification:Package 'src/alma_ultrasound' with type 'ros.ament_python' and name 'alma_ultrasound'
+[1.566s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.692s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.692s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.703s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/pi/robotik_alma_ws/install
+[1.713s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 309 installed packages in /opt/ros/iron
+[1.720s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.942s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_args' from command line to 'None'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_target' from command line to 'None'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_clean_first' from command line to 'False'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'cmake_force_configure' from command line to 'False'
+[1.943s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'ament_cmake_args' from command line to 'None'
+[1.944s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[1.944s] Level 5:colcon.colcon_core.verb:set package 'alma_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.944s] DEBUG:colcon.colcon_core.verb:Building package 'alma_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/robotik_alma_ws/build/alma_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/robotik_alma_ws/install/alma_camera', 'merge_install': False, 'path': '/home/pi/robotik_alma_ws/src/alma_camera', 'symlink_install': False, 'test_result_base': None}
+[1.945s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'cmake_args' from command line to 'None'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'cmake_target' from command line to 'None'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'cmake_clean_cache' from command line to 'False'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'cmake_clean_first' from command line to 'False'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'cmake_force_configure' from command line to 'False'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'ament_cmake_args' from command line to 'None'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'catkin_cmake_args' from command line to 'None'
+[1.946s] Level 5:colcon.colcon_core.verb:set package 'alma_erste_abgabe' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.947s] DEBUG:colcon.colcon_core.verb:Building package 'alma_erste_abgabe' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/robotik_alma_ws/build/alma_erste_abgabe', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/robotik_alma_ws/install/alma_erste_abgabe', 'merge_install': False, 'path': '/home/pi/robotik_alma_ws/src/alma_erste_abgabe', 'symlink_install': False, 'test_result_base': None}
+[1.948s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'cmake_args' from command line to 'None'
+[1.949s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'cmake_target' from command line to 'None'
+[1.949s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.949s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'cmake_clean_cache' from command line to 'False'
+[1.949s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'cmake_clean_first' from command line to 'False'
+[1.949s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'cmake_force_configure' from command line to 'False'
+[1.949s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'ament_cmake_args' from command line to 'None'
+[1.949s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'catkin_cmake_args' from command line to 'None'
+[1.949s] Level 5:colcon.colcon_core.verb:set package 'alma_ultrasound' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.949s] DEBUG:colcon.colcon_core.verb:Building package 'alma_ultrasound' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/robotik_alma_ws/build/alma_ultrasound', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/robotik_alma_ws/install/alma_ultrasound', 'merge_install': False, 'path': '/home/pi/robotik_alma_ws/src/alma_ultrasound', 'symlink_install': False, 'test_result_base': None}
+[1.950s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.955s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.958s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/robotik_alma_ws/src/alma_camera' with build type 'ament_python'
+[1.961s] Level 1:colcon.colcon_core.shell:create_environment_hook('alma_camera', 'ament_prefix_path')
+[1.973s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/ament_prefix_path.ps1'
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/ament_prefix_path.dsv'
+[1.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/ament_prefix_path.sh'
+[1.982s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.983s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.002s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/robotik_alma_ws/src/alma_erste_abgabe' with build type 'ament_python'
+[2.002s] Level 1:colcon.colcon_core.shell:create_environment_hook('alma_erste_abgabe', 'ament_prefix_path')
+[2.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/hook/ament_prefix_path.ps1'
+[2.006s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/hook/ament_prefix_path.dsv'
+[2.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/hook/ament_prefix_path.sh'
+[2.012s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.012s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.032s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/robotik_alma_ws/src/alma_ultrasound' with build type 'ament_python'
+[2.033s] Level 1:colcon.colcon_core.shell:create_environment_hook('alma_ultrasound', 'ament_prefix_path')
+[2.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/hook/ament_prefix_path.ps1'
+[2.037s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/hook/ament_prefix_path.dsv'
+[2.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/hook/ament_prefix_path.sh'
+[2.043s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.044s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.450s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/robotik_alma_ws/src/alma_camera'
+[3.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.871s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/robotik_alma_ws/src/alma_erste_abgabe'
+[4.872s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.872s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.213s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/robotik_alma_ws/src/alma_ultrasound'
+[6.214s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.215s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/robotik_alma_ws/src/alma_camera': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data
+[8.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/robotik_alma_ws/src/alma_ultrasound': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_ultrasound/prefix_override:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_ultrasound build --build-base /home/pi/robotik_alma_ws/build/alma_ultrasound/build install --record /home/pi/robotik_alma_ws/build/alma_ultrasound/install.log --single-version-externally-managed install_data
+[8.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/robotik_alma_ws/src/alma_erste_abgabe': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_erste_abgabe build --build-base /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build install --record /home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log --single-version-externally-managed install_data
+[11.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/robotik_alma_ws/src/alma_camera' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_camera/prefix_override:/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_camera build --build-base /home/pi/robotik_alma_ws/build/alma_camera/build install --record /home/pi/robotik_alma_ws/build/alma_camera/install.log --single-version-externally-managed install_data
+[11.077s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera' for CMake module files
+[11.080s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera' for CMake config files
+[11.089s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/lib'
+[11.092s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/bin'
+[11.095s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/lib/pkgconfig/alma_camera.pc'
+[11.097s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/lib/python3.10/site-packages'
+[11.099s] Level 1:colcon.colcon_core.shell:create_environment_hook('alma_camera', 'pythonpath')
+[11.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/pythonpath.ps1'
+[11.109s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/pythonpath.dsv'
+[11.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/hook/pythonpath.sh'
+[11.118s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_camera/bin'
+[11.118s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alma_camera)
+[11.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.ps1'
+[11.127s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.dsv'
+[11.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.sh'
+[11.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.bash'
+[11.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_camera/share/alma_camera/package.zsh'
+[11.150s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/robotik_alma_ws/install/alma_camera/share/colcon-core/packages/alma_camera)
+[11.158s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_ultrasound' for CMake module files
+[11.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/robotik_alma_ws/src/alma_ultrasound' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_ultrasound/prefix_override:/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_ultrasound build --build-base /home/pi/robotik_alma_ws/build/alma_ultrasound/build install --record /home/pi/robotik_alma_ws/build/alma_ultrasound/install.log --single-version-externally-managed install_data
+[11.164s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_ultrasound' for CMake config files
+[11.167s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_ultrasound/lib'
+[11.168s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_ultrasound/bin'
+[11.168s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/pkgconfig/alma_ultrasound.pc'
+[11.169s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_ultrasound/lib/python3.10/site-packages'
+[11.169s] Level 1:colcon.colcon_core.shell:create_environment_hook('alma_ultrasound', 'pythonpath')
+[11.170s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/hook/pythonpath.ps1'
+[11.172s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/hook/pythonpath.dsv'
+[11.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/hook/pythonpath.sh'
+[11.177s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_ultrasound/bin'
+[11.177s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alma_ultrasound)
+[11.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/package.ps1'
+[11.181s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/package.dsv'
+[11.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/package.sh'
+[11.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/package.bash'
+[11.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_ultrasound/share/alma_ultrasound/package.zsh'
+[11.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/robotik_alma_ws/install/alma_ultrasound/share/colcon-core/packages/alma_ultrasound)
+[11.194s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_erste_abgabe' for CMake module files
+[11.199s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_erste_abgabe' for CMake config files
+[11.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/robotik_alma_ws/src/alma_erste_abgabe' returned '0': PYTHONPATH=/home/pi/robotik_alma_ws/build/alma_erste_abgabe/prefix_override:/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/alma_erste_abgabe build --build-base /home/pi/robotik_alma_ws/build/alma_erste_abgabe/build install --record /home/pi/robotik_alma_ws/build/alma_erste_abgabe/install.log --single-version-externally-managed install_data
+[11.206s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib'
+[11.206s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/bin'
+[11.207s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/pkgconfig/alma_erste_abgabe.pc'
+[11.208s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/lib/python3.10/site-packages'
+[11.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('alma_erste_abgabe', 'pythonpath')
+[11.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/hook/pythonpath.ps1'
+[11.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/hook/pythonpath.dsv'
+[11.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/hook/pythonpath.sh'
+[11.216s] Level 1:colcon.colcon_core.environment:checking '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/bin'
+[11.216s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(alma_erste_abgabe)
+[11.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/package.ps1'
+[11.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/package.dsv'
+[11.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/package.sh'
+[11.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/package.bash'
+[11.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/alma_erste_abgabe/package.zsh'
+[11.234s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/robotik_alma_ws/install/alma_erste_abgabe/share/colcon-core/packages/alma_erste_abgabe)
+[11.235s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.237s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.237s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.238s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.263s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.264s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.264s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.305s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.306s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/robotik_alma_ws/install/local_setup.ps1'
+[11.310s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/robotik_alma_ws/install/_local_setup_util_ps1.py'
+[11.316s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/robotik_alma_ws/install/setup.ps1'
+[11.322s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/robotik_alma_ws/install/local_setup.sh'
+[11.324s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/robotik_alma_ws/install/_local_setup_util_sh.py'
+[11.327s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/robotik_alma_ws/install/setup.sh'
+[11.332s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/robotik_alma_ws/install/local_setup.bash'
+[11.335s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/robotik_alma_ws/install/setup.bash'
+[11.340s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/robotik_alma_ws/install/local_setup.zsh'
+[11.343s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/robotik_alma_ws/install/setup.zsh'
